@@ -63,25 +63,42 @@ leftK.on("click", e => {
   
  $(function() {
   
- $(window).scroll(function() {
-  
- if($(this).scrollTop() != 0) {
-  
- $('.footer__inter').fadeIn();
-  
- } else {
-  
- $('.footer__inter').fadeOut();
-  
- }
+    $(window).scroll(function() {
+    
+    if($(this).scrollTop() != 0) {
+    
+    $('.footer__inter').fadeIn();
+    
+    } else {
+    
+    $('.footer__inter').fadeOut();
+    
+    }
   
  });
   
  $('.footer__inter').click(function() {
-  
- $('body,html').animate({scrollTop:0},800);
-  
+    
+    $('body,html').animate({scrollTop:0},800);
+    
+    });
+    
  });
-  
- });
+var count = 0;
+ $(".pt__text__content-before").on("click", e => {
+     console.log("hi")
+     if (count % 2 == 0) {
+        $(".pt__text__content").css("position", "relative")
+        $(".pt__text__content").css("height", "auto")
+        $(".pt__text__content-before").css("background", "inherit");
+        count += 1;
+     }
+     else {
+         console.log (count)
+        $(".pt__text__content").css("position", "absolute")
+        $(".pt__text__content").css("height", "10rem")
+        $(".pt__text__content-before").css("background", "linear-gradient(to bottom, rgba(255, 255, 255, 0), #dce0e0 75%)"); 
+        count += 1;
+    }
+ })
   
