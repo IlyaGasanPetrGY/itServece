@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #010f0e;
+    color: #fff;
 
 }
 .containers {
@@ -19,7 +21,28 @@
     flex: 1;
     text-align: center;
     vertical-align: middle;
+    padding-top: 2.8rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 .section__desc {
     flex: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.desc__el {
+    max-width: 22.2rem;
+}
+.desc__text {
+    font-size: 1.3rem;
+}
+.el__wrap {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.el__img {
+    width: 100%;
 }

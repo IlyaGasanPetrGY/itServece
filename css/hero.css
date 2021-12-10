@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import url(./whi.css);
+@import url(./pt.css);
+@import url(./footer.css);
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 html,
 body {
   color: #fff;
