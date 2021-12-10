@@ -2,6 +2,11 @@
 @import url(./whi.css);
 @import url(./pt.css);
 @import url(./footer.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -11,10 +16,15 @@ li {
   list-style: none;
 }
 
+a {
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -41,6 +51,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
+@media screen and (max-width: 760px) {
+  html,
+body {
+    font-size: 18px;
+  }
+}
 
 .wrapper {
   position: relative;
@@ -61,7 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
   width: 100vw;
   height: 100vh;
-  background: url("./../png/brud.png");
+  background: url("./../png/brud.png") no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -85,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
-  font-size: 3.9rem;
+  font-size: 3rem;
   margin-bottom: 8rem;
   font-style: italic;
   font-weight: bold;

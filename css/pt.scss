@@ -1,4 +1,15 @@
+@mixin tablets {
+    @media screen and (max-width: 760px) {
+        @content;
+    }
+}
+@mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+}
 .section__pt {
+    width: 100%;
     display: flex;
     align-items: center;
     background: #dce0e0;
@@ -15,13 +26,16 @@
     flex-direction: column;
     padding: 0 10rem;
     text-align: center;
+    @include tablets() {
+        padding: 0;
+    }
 }
 .title__text {
-    font-size: 3.9rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 .title__el {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 3rem;
@@ -80,7 +94,6 @@
     display: flex;
     justify-content: center;
     flex: 5;
-    width: 20rem;
     overflow: hidden;
 }
 .pt__menu__el {
@@ -91,7 +104,29 @@
     display: flex;
     justify-content: center;
     display: none;
+    .pt__menu__el__link {
+        width: 100%;
+        display: block;
+        height: inherit;
+        .el__img {
+            display: block;
+            width: inherit;
+            height: auto;
+            object-fit: cover;
+        }
+    }
 }
+.pt__el--ilya {
+    .pt__menu__el {
+        max-height: 23rem;
+    }
+}
+.pt__el--kate {
+    .pt__menu__el {
+        max-height: 30rem;
+    }
+}
+
 .pt__menu__el--active {
     display: block;
 }
