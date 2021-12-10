@@ -48,15 +48,19 @@
     margin-bottom: 3rem;
 }
 .pt__wrap__img {
-    max-width: 9rem;
+    width: 9rem;
     height: 9rem;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 2rem;
+    @include phones() {
+        width: 6rem;
+        height: 6rem;
+    }
 }
 .pt__img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .pt__text__content {
     font-weight: bold;
