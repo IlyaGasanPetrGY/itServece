@@ -6,6 +6,11 @@
         @content;
     }
 }
+@mixin phones {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+}
 * {
     box-sizing: border-box;
 }
@@ -55,6 +60,9 @@ body {
     position: relative;
     @include tablets() {
         font-size: 18px;
+    }
+    @include phones() {
+        font-size: 16px;
     }
     
 }
