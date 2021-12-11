@@ -43,6 +43,13 @@
 .title__desc {
     margin-bottom: 6rem;
 }
+.pt__info {
+    @include tablets() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 .pt__el {
     width: 90%;
     margin-bottom: 3rem;
@@ -50,17 +57,33 @@
 .pt__wrap__img {
     width: 9rem;
     height: 9rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    @include phones() {
+        
+        flex: 1;  
+    }
+    
+}
+.pt__decrip {
+    flex: 1;
+    
+}   
+.descrip__st {
+    font-size: 0.9rem;
+}
+.pt__img {
+
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 2rem;
     @include phones() {
+        
         width: 6rem;
         height: 6rem;
     }
-}
-.pt__img {
-    width: 100%;
-    height: 100%;
 }
 .wrap__text__content {
     position: relative;
@@ -70,7 +93,14 @@
 .pt__text__content {
     position: absolute;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1.8rem;
+    @include tablets() {
+        font-size: 1.2rem;;
+    }
+    @include phones() {
+        
+        font-size: 0.9rem;
+    }
     
 }
 .pt__text__content-before {
@@ -90,6 +120,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phones() {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 .pt__list {
     display: flex;
@@ -106,11 +140,8 @@
     align-items: center;
 }
 .descrip__name {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: bold;
-}
-.pt__wrap__img {
-    margin-right: 2rem;
 }
 .pt__menu {
     position: relative;
