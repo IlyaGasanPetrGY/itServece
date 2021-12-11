@@ -96,7 +96,7 @@ $(".pt__el--ilya").find(".pt__text__content-before").on("click", e => {
     else {
         console.log (count)
        $(".pt__el--ilya").find(".pt__text__content").css("position", "absolute")
-       $(".pt__el--ilya").find(".pt__text__content").css("height", "10rem")
+       $(".pt__el--ilya").find(".pt__text__content").css("height", "6rem")
        $(".pt__el--ilya").find(".pt__text__content-before").css("background", "linear-gradient(to bottom, rgba(255, 255, 255, 0), #dce0e0 75%)"); 
        count += 1;
    }
@@ -113,7 +113,7 @@ $(".pt__el--ilya").find(".pt__text__content-before").on("click", e => {
     else {
         console.log (count)
        $(".pt__el--kate").find(".pt__text__content").css("position", "absolute")
-       $(".pt__el--kate").find(".pt__text__content").css("height", "10rem")
+       $(".pt__el--kate").find(".pt__text__content").css("height", "6rem")
        $(".pt__el--kate").find(".pt__text__content-before").css("background", "linear-gradient(to bottom, rgba(255, 255, 255, 0), #dce0e0 75%)"); 
        count += 1;
    }

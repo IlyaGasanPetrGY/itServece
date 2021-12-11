@@ -24,6 +24,7 @@
 }
 
 .section__pt__title {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +120,7 @@
 
 .wrap__text__content {
   position: relative;
-  min-height: 10rem;
+  min-height: 5rem;
   overflow: hidden;
 }
 
