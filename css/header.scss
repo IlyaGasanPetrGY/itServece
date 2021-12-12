@@ -36,6 +36,10 @@
 .logo__wrapper {
     flex: 1;
 }
+.logo__img {
+    height: 4rem;
+    width: auto;
+}
 .list {
     flex: 2;
     @include tablets() {

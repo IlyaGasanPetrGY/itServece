@@ -47,6 +47,11 @@
           flex: 1;
 }
 
+.logo__img {
+  height: 4rem;
+  width: auto;
+}
+
 .list {
   -webkit-box-flex: 2;
       -ms-flex: 2;
