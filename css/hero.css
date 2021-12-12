@@ -59,7 +59,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   html,
 body {
     font-size: 18px;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 2rem;
   border-radius: 20px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .container__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   width: 50%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .form__content__title {
     display: none;
   }
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 .content__title--phones {
   display: none;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .content__title--phones {
     display: block;
     font-size: 1.5rem;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #AFAFAF;
   width: 70%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .form__content__desc {
     width: 100%;
     margin-bottom: 1rem;
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   border: #AFAFAF 1px solid;
   padding: 8px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .form__row {
     margin-bottom: 1rem;
   }

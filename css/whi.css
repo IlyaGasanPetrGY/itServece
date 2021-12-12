@@ -40,7 +40,7 @@
   font-size: 2.8rem;
   font-weight: bold;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .section__title {
     -webkit-box-flex: 0.3;
         -ms-flex: 0.3;
@@ -58,7 +58,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .section__desc {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -109,7 +109,7 @@
   border-radius: 50%;
   overflow: hidden;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .el__wrap {
     width: 10rem;
     height: 10rem;
