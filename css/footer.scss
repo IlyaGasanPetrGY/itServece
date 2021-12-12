@@ -8,10 +8,11 @@
 }
 .footer__logo {
     flex: 1;
+    text-align: start;
 }
 .footer__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between  ;
     width: 90%;
     align-items: center;
     text-align: center;
@@ -34,4 +35,5 @@
     color: #fff;
     flex: 1;
     margin: 0;
+    text-align: end;
 }

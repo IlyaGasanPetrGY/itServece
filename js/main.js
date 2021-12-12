@@ -118,4 +118,37 @@ $(".pt__el--ilya").find(".pt__text__content-before").on("click", e => {
        count += 1;
    }
 })
- 
+const sanwich = $(".sandwich__linck");
+const menu = $(".sandwich__menu");
+sanwich.on("click", e => {
+    e.preventDefault();
+    menu.slideToggle(500, "linear");
+    menu.css("background", "black")
+    menu.css("border-radius", "5px")
+    console.log ("hi")
+})
+const inputs = $(".input__row");
+inputs.on("click", e => {
+    e.currentTarget.value = " " 
+})
+
+var NAME;
+var Nomber;
+const btn = $(".btn__title");
+btn.on("click", e => {
+    e.preventDefault();
+    if (ValidPhone()) {
+        NAME = document.getElementById('name').value;
+        Nomber = document.getElementById('input__row').value;
+        console.log (NAME+ ' '+ Nomber)
+    }
+})
+function ValidPhone(f) {
+    var re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+    var myPhone = document.getElementById('input__row').value;
+    var valid = re.test(myPhone);
+    if (valid) output = 'Номер телефона введен правильно!';
+    else output = 'Номер телефона введен неправильно!';
+    console.log (valid);
+    return valid; 
+}

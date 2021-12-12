@@ -11,14 +11,86 @@
     <div class="wrapper">
       <div class="maincontent">
         <section class="hero hero__container">
+        <header class="header">
+          <div class="header__container">
+            <div class="logo__wrapper">
+              <img src="" alt="" class="logo__img">
+            </div>
+            <div class="header__sandiwch">
+              <a href="" class="sandwich__linck">
+                <img src="./png/gamburger.svg" alt="">
+              </a>
+              <ul class="sandwich__menu">
+                <li class="sandwich__menu__el">
+                  <a href="#us" class="menu__el__link">О нас</a>
+                </li>
+                <li class="sandwich__menu__el">
+                  <a href="#team" class="menu__el__link">Наша команда</a>
+                </li>
+                <li class="sandwich__menu__el">
+                  <a href="#pt" class="menu__el__link">Портфолио</a>
+                </li>
+                <li class="sandwich__menu__el">
+                  
+                    <a href="tell:89217010075" class="contacts__linck">+7 (921) 701 00 75</a>
+                  
+                </li>
+                
+              </ul>
+            </div>
+            
+            <nav class="list">
+              <ul class="menu__header">
+                <li class="menu__heder__el">
+                  <a href="#us" class="menu__el__link">О нас</a>
+                </li>
+                <li class="menu__heder__el">
+                  <a href="#team" class="menu__el__link">Наша команда</a>
+                </li>
+                <li class="menu__heder__el">
+                  <a href="#pt" class="menu__el__link">Портфолио</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="contacts">
+              <a href="tell:89217010075" class="contacts__linck">+7 (921) 701 00 75</a>
+            </address>
+          </div>
+          
+        </header>
           <div class="container">
             <div class="hero__title__section">
-              <h1 class="hero__title"><b class="it">IT</b>SERVICE</h1>
-              <div class="hero__description">View and search</div>
+              Добро пожаловать в
+место где создаются <b class="grad">сайты</b>
             </div>
+            <form class="container__form">
+              <div class="form__col">
+                <div class="form__content__title">
+                  <div class="content__title">У вас</div> 
+                  <div class="content__title">есть вопросы?</div> 
+                  
+                </div>
+                <div class="content__title--phones">У вас есть вопросы?</div>
+                <div class="form__content__desc">
+                  Оставьте Ваш номер телефона и мы свяжемся с вами
+                </div>
+              </div>
+              <div class="form__col">
+                <lable class="form__row">
+                  <img src="./png/humicon.png" alt="" class="img__row">
+                  <input type="text" required class="input__row" id="name" value="Как к Вам обратиться?">
+                </lable>
+                <lable class="form__row">
+                  <img src="./png/tel.png" alt="" class="img__row">
+                  <input type="text" class="input__row" id="input__row" required value="+7-777-777-77-77"> 
+                </lable>
+                <button class="btn__title">Получить консультацию</button>
+              </div>
+              
+            </form>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="us">
           <div class="containers">
             <div class="section__title">Зачем мы нужны?</div>
             <div class="section__desc">
@@ -26,9 +98,7 @@
                 <div class="disc__title">Заказчикам</div>
                 <div class="desc__text">
                   Заказчик может быть уверенным в выполнении своего проекта в
-                  точные сроки. Никакие человеческие факторы не смогут помешать,
-                  ведь существует целый штыб специалистов, готовых прийти на
-                  помощь.
+                  точные сроки. Для каждого нашего клиента у нас индиаидуальный подход и дизайн. Мы идем в ногу с современыими тенденциями и трендими, поэтому вы можете быть уверенны в том что ваш сайт будет актуален не только по дизайну, но и с технологиями реализованными на вашем сайте.
                 </div>
               </div>
               <div class="desc__el">
@@ -40,7 +110,7 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="team">
           <div class="containers">
             <h1 class="section__title">Наша команда</h1>
             <ul class="section__desc">
@@ -74,7 +144,7 @@
             </ul>
           </div>
         </section>
-        <section class="section__pt">
+        <section class="section__pt" id="pt">
           <div class="conteiner__pt">
             <div class="section__pt__title">
               <h2 class="title__text">Портфолио</h2>

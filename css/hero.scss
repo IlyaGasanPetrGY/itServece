@@ -1,6 +1,7 @@
 @import url(./whi.css);
 @import url(./pt.css);
 @import url(./footer.css);
+@import url(./header.css);
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;700;800;900&family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 @mixin tablets {
     @media screen and (max-width: 760px) {
@@ -91,7 +92,6 @@ h1,h2,h3,h4,h5,h6 {
 .hero {
     width: 100vw;
     height: 100vh;
-   
     background: url("./../png/brud.png") no-repeat;
     background-size: cover;
 }
@@ -106,11 +106,12 @@ h1,h2,h3,h4,h5,h6 {
     
     background-image: radial-gradient(#000000d4, #141414eb);
 }
-.hero__title {
-    font-size: 3rem;
-    margin-bottom: 8rem;
-    font-style: italic;
+.hero__title__section {
+    width: 40%;
+    min-width: 290px;
+    font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 .hero__description {
     font-size: 2.2rem;
@@ -120,4 +121,86 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 3rem;
     font-style: normal;
 
+}
+.container__form {
+    width: 50%;
+    min-height: 30%;
+    min-width: 290px;
+    display: flex;
+    justify-content: space-between;
+    background: #161616b5;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    @include tablets() {
+        flex-direction: column;
+    }
+
+}
+.form__col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.form__content__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50%;
+    @include tablets() {
+        display: none;
+    }
+}
+.content__title--phones {
+    display: none;
+    @include tablets() {
+        display: block;
+        font-size: 1.5rem;
+        width: 100%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+}
+.form__content__desc {
+    color: #AFAFAF;
+    width: 70%;
+    @include tablets() {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+.form__row {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: #AFAFAF 1px solid;
+    padding: 8px;
+    @include tablets() {
+        margin-bottom: 1rem;
+    }
+}
+.img__row {
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+}
+.input__row {
+    background: inherit;
+    border: none;
+    outline: none;
+    color: #696969 ;
+}
+.btn__title {
+    height: 2.4rem;
+    background: #620065;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+} 
+.grad {
+    background: linear-gradient(45deg, #5fc0fc 33%, #e039f1 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
 }
