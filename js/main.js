@@ -141,6 +141,9 @@ btn.on("click", e => {
         NAME = document.getElementById('name').value;
         Nomber = document.getElementById('input__row').value;
         console.log (NAME+ ' '+ Nomber)
+        document.getElementById('name').value = "";
+        document.getElementById('input__row').value = "";
+        fetch(`https://api.telegram.org/bot5001139628:AAERqrJSwZI4zVjH5O6qBIXVHnyB8ZAnxYo/sendMessage?chat_id=-794730103&text=имя ${NAME} телефон ${Nomber}`) 
     }
 })
 function ValidPhone(f) {
