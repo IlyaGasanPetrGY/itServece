@@ -60,8 +60,9 @@
 }
 .desc__text {
     font-size: 1.3rem;
-    @include phones() {
+    @include tablets() {
         font-size: 1rem;
+        display: none;
     }
 }
 .el__wrap {
@@ -95,4 +96,18 @@
 .disc__title {
     font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    position: relative;
+}
+.disc__title__triangle {
+    border: 7px solid transparent; /* Прозрачные границы */
+    border-top: 7px solid #fff; /* Добавляем треугольник */
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translate(-50%);
+    display: none;
+    @include tablets() {
+        display: block;
+    }
 }

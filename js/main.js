@@ -141,8 +141,8 @@ btn.on("click", e => {
         NAME = document.getElementById('name').value;
         Nomber = document.getElementById('input__row').value;
         console.log (NAME+ ' '+ Nomber)
-        document.getElementById('name').value = "";
-        document.getElementById('input__row').value = "";
+        document.getElementById('name').value = "Отправленно";
+        document.getElementById('input__row').value = "Отправленно";
         fetch(`https://api.telegram.org/bot5001139628:AAERqrJSwZI4zVjH5O6qBIXVHnyB8ZAnxYo/sendMessage?chat_id=-794730103&text=имя ${NAME} телефон ${Nomber}`) 
     }
 })
@@ -155,3 +155,13 @@ function ValidPhone(f) {
     console.log (valid);
     return valid; 
 }
+const desctext = $(".desc__el");
+desctext.on("click", e => {
+    console.log (window.innerWidth)
+    if (window.innerWidth < 800) {
+        let opentext = $(e.currentTarget).find(".desc__text");
+        $(opentext).slideToggle(500, "linear")
+        $(e.currentTarget).siblings().find(".desc__text").css("display", "none")
+        console.log ($(e.currentTarget))
+    }
+})

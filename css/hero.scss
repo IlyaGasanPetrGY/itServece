@@ -195,9 +195,13 @@ h1,h2,h3,h4,h5,h6 {
 .btn__title {
     height: 2.4rem;
     background: #620065;
+    &:hover {
+        background: #9f17a3;
+    }
     border-radius: 5px;
     border: none;
     color: #fff;
+    cursor: pointer;
 } 
 .grad {
     background: linear-gradient(45deg, #5fc0fc 33%, #e039f1 66%, #8AA9D6);

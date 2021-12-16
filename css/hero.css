@@ -243,6 +243,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   border: none;
   color: #fff;
+  cursor: pointer;
+}
+.btn__title:hover {
+  background: #9f17a3;
 }
 
 .grad {

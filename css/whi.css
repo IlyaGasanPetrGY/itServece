@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .section {
   width: 100vw;
   height: 100vh;
@@ -97,9 +98,10 @@
 .desc__text {
   font-size: 1.3rem;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 900px) {
   .desc__text {
     font-size: 1rem;
+    display: none;
   }
 }
 
@@ -143,4 +145,26 @@
 .disc__title {
   font-size: 2rem;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.disc__title__triangle {
+  border: 7px solid transparent;
+  /* Прозрачные границы */
+  border-top: 7px solid #fff;
+  /* Добавляем треугольник */
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .disc__title__triangle {
+    display: block;
+  }
 }
